@@ -34,7 +34,7 @@ echo "Diff to Kubernetes"
 
 #  helm plugin install https://github.com/databus23/helm-diff
 
-helm diff upgrade hello-world helm/hello-world/ --namespace hello-world -f helm/values-prod.yaml --set image.tag=${COMMIT_HASH}
+helm diff upgrade hello-world helm/hello-world/ --namespace hello-world -f helm/values-prod.yaml --set image.tag=${COMMIT_HASH} --allow-unreleased
 
 echo "Deployment to Kubernetes"
 

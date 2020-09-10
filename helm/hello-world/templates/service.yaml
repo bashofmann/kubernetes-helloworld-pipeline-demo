@@ -11,5 +11,9 @@ spec:
       targetPort: http
       protocol: TCP
       name: http
+    - port: 9091
+      targetPort: metrics
+      protocol: TCP
+      name: metrics
   selector:
     {{- include "hello-world.selectorLabels" . | nindent 4 }}

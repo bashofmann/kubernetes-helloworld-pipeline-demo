@@ -29,6 +29,9 @@ securityContext: {}
   # runAsNonRoot: true
   # runAsUser: 1000
 
+serviceMonitor:
+  enabled: false
+
 service:
   type: ClusterIP
   port: 80
